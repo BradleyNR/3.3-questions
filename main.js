@@ -29,7 +29,7 @@ console.log("The average price is " + (Math.round(average *100)/100));
 // console.log(arrayTwo);
 var newArray = [];
 
-items.filter(function(item){
+items.forEach(function(item){
   if (item.price > 14 && item.price < 18) {
     return newArray.push(item.title);
   }
