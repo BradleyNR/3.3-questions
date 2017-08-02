@@ -35,7 +35,19 @@ items.forEach(function(item){
   }
 })
 
+var titles = items.filter(function(item){
+  return item.price > 14 && item.price < 18;
+}).map(function(item){
+  return item.title;
+});
+
+console.log(titles);
+
 console.log("Titles: ", newArray);
+
+
+
+
 
 
 //--------------------------------------------------------------------------------
